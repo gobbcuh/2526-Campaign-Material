@@ -186,6 +186,116 @@ body {
   line-height: 1.6;
 }
 
+/* Third Column Styling */
+.advocacy-column {
+  background-color: #645721; /* Earthy olive green */
+  color: #fff; /* White text */
+  padding: 20px;
+  text-align: left;
+}
+
+/* Advocacy Image */
+.advocacy-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.advocacy-profile-image {
+  width: 300px;
+  height: 180px;
+  border-radius: 10%; /* Round border */
+  border: 3px solid #fff; /* White border */
+}
+
+/* Header Section */
+.advocacy-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.advocacy-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.advocacy-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.advocacy-line {
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/* Body Text */
+.advocacy-body {
+  margin-bottom: 20px;
+}
+
+.advocacy-text {
+  font-size: 14px;
+  color: #fff;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.advocacy-text strong {
+  font-weight: bold;
+  color: #fff8cf; /* Light beige for emphasis */
+}
+
+/* Bullet Points Section */
+.advocacy-bullet-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 20px;
+}
+
+.advocacy-bullet-list li {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.advocacy-bullet-list li::before {
+  content: '•';
+  color: #fff8cf; /* Gold dot */
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* Top Icons (Decorative Dots) */
+.top-icons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #fff8cf;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
 /* Responsive Design for Mobile and Tablets */
 @media (max-width: 768px) {
   .container {
@@ -227,6 +337,23 @@ body {
   }
 
   .section-text, .bullet-list li {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .advocacy-profile-image {
+    width: 120px; /* Smaller image for mobile */
+    height: 120px;
+  }
+
+  .advocacy-title {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .advocacy-subtitle {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .advocacy-text, .advocacy-bullet-list li {
     font-size: 12px; /* Smaller font size for mobile */
   }
 }
