@@ -1,5 +1,5 @@
 /* General Reset */
-body, h2, h3, ul, li {
+body, h2, h3, ul, li, p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,11 +24,10 @@ body {
   flex: 1; /* Each column takes equal space */
   min-width: 250px; /* Minimum width for each column */
   min-height: 800px; /* Minimum height for each column */
-  background-color: #f9f9f9; /* Light background for visibility */
+  background-color: #fff8cf; /* Light beige/cream background */
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-  border-radius: 10px; /* Rounded corners for a modern look */
-  background-color: #fff8cf;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners */
   position: relative; /* For positioning the wavy design */
   overflow: hidden; /* Ensures the wavy design doesn't overflow */
 }
@@ -138,6 +137,54 @@ body {
   z-index: 2;
 }
 
+/* Section Styling (For Second Column) */
+.section {
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #645721; /* Olive green */
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.section-heading strong {
+  font-size: 40px; /* Slightly larger for "STEPPING UP" */
+}
+
+.section-text {
+  font-size: 14px;
+  color: #000000; /* Black/dark brown */
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section-text strong {
+  font-weight: bold;
+}
+
+/* Bullet List Styling (For Second Column) */
+.bullet-list {
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.bullet-list li {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
 /* Responsive Design for Mobile and Tablets */
 @media (max-width: 768px) {
   .container {
@@ -167,6 +214,18 @@ body {
   }
 
   .bullet-list li {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .section-heading {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+
+  .section-heading strong {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .section-text, .bullet-list li {
     font-size: 12px; /* Smaller font size for mobile */
   }
 }
