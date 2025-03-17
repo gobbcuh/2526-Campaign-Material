@@ -153,13 +153,14 @@ body {
 }
 
 .section-heading strong {
-  font-size: 40px; /* Slightly larger for "STEPPING UP" */
+  font-size: 43px; /* Slightly larger for "STEPPING UP" */
+  color: #96945f;
 }
 
 .section-text {
   font-size: 14px;
   color: #000000; /* Black/dark brown */
-  text-align: justify;
+  text-align: left;
   line-height: 1.6;
   margin-bottom: 15px;
   margin-left: 20px;
